@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>情人节快乐，Jean</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+  <style media="screen">
+    .container {
+      text-align: justify;
+    }
+    #article {
+      padding: 20px;
+    }
+    #title {
+      padding-left: 20px;
+    }
+    html {
+      font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    }
+    /*html,body {
+      padding: 0;
+      margin: 0;
+    }*/
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3 id="title">你好，来劲</h3>
+    <div class="divider"></div>
+    <div class="section" id="article">
+      <p>前两天看朴树的采访，他说他相信命运只是看似巧合，实际早已经注定好。我也相信。那时候我想到了你，我想命运到底是怎么想的？我喜欢你，却注定无法在一起。</p>
+      <p>我有多喜欢你呢？也没有那么那么那么那么那么那么那么那么喜欢。但是有一个瞬间，说来也巧，就是测量你腿长度之前的那段时间里。我和你说，看到人民安居乐业我们就可以放心了之前的那段时间里。</p>
+      <p>我坐在故宫的长椅上，望着另一侧的红墙金瓦，树木高大，天空辽阔。我又累又饿，我觉得你也是，我们就像被粘在椅子上不想动。那段时间里我什么也不想做，但是我特别想身边有你，皇后娘娘，我特别想拉着你的手（虽然你腾出了两只手玩手机），在故宫里过一段时间，只有咱们俩。</p>
+      <p>我们可以算是情人吗？话剧里的男主是个薄情寡义的人，但我会记住你的。你也不要忘记，口红是我送给你的，如果未来有白玫瑰，那也是我送给你的。</p>
+      <p>hi,我的小情人，祝你情人节快乐。</p>
+    </div>
+
+    <button class="waves-effect waves-teal btn-flat" id="read">已阅</button>
+    <button class="waves-effect waves-teal btn-flat" id="like">喜欢</button>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="materialize/js/materialize.min.js" charset="utf-8"></script>
+  <script>
+  var $read = document.querySelector('#read');
+  var $like = document.querySelector('#like');
+  var $toastContent1 = $('<span>我写的不错吧！</span>');
+  var $toastContent2 = $('<span>喜欢就抱抱嘛~</span>');
+  $read.addEventListener('click',function () {
+    Materialize.toast($toastContent1, 3000);
+  },false);
+  $like.addEventListener('click',function () {
+    Materialize.toast($toastContent2, 3000);
+  },false);
+  </script>
+</body>
+</html>
